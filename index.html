@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>VILELA OLIVEIRA ADVOGADOS ASSOCIADOS</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --bg-body: #ffffff;
+    --primary-green: #b2dfdb; 
+    --gold-main: #c5a059;    
+    --dark-deep: #050a08;
+    --text-muted: #555555;
+    --shadow: 0 10px 30px rgba(0,0,0,0.05);
+  }
+
+  *{ box-sizing:border-box; margin:0; padding:0; }
+
+  body {
+    font-family: 'Montserrat', sans-serif;
+    background: var(--bg-body);
+    color: var(--dark-deep);
+    line-height: 1.6;
+    scroll-behavior: smooth;
+  }
+
+  header {
+    background: var(--dark-deep);
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    line-height: 0;
+  }
+  header img {
+    max-width: 320px;
+    height: auto;
+    display: block;
+  }
+
+  nav {
+    background: var(--dark-deep);
+    padding: 18px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 2px solid var(--gold-main);
+  }
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 13px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: 0 20px;
+    transition: 0.3s;
+  }
+  nav a:hover { color: var(--gold-main); }
+
+  .section {
+    padding: 80px 8%;
+    max-width: 1300px;
+    margin: auto;
+    background: #fff;
+    text-align: center;
+  }
+
+  .section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    margin-bottom: 30px;
+    position: relative;
+    display: inline-block;
+  }
+  .section h2::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 3px;
+    background: var(--gold-main);
+  }
+
+  .especializados-msg {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    font-weight: 800;
+    color: var(--dark-deep);
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .sub-msg {
+    font-size: 18px;
+    color: var(--text-muted);
+    margin-bottom: 40px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .btn {
+    background: var(--primary-green);
+    color: var(--dark-deep);
+    border: none;
+    border-radius: 4px;
+    padding: 16px 35px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 13px;
+    cursor: pointer;
+    transition: 0.4s;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-decoration: none;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    min-width: 250px;
+  }
+  .btn:hover {
+    background: var(--dark-deep);
+    color: #fff;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  }
+
+  @keyframes pulse-light {
+    0% { transform: scale(1); box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+    50% { transform: scale(1.05); box-shadow: 0 8px 25px rgba(37, 211, 102, 0.3); }
+    100% { transform: scale(1); box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+  }
+
+  .btn-whatsapp {
+    background: #25d366;
+    color: #fff;
+    animation: pulse-light 2s infinite ease-in-out;
+  }
+  .btn-whatsapp:hover {
+    background: #128c7e;
+  }
+
+  .map-container {
+    border: 1px solid var(--gold-main);
+    padding: 10px;
+    background: #fff;
+    margin-top: 30px;
+  }
+
+  footer {
+    background: var(--dark-deep);
+    color: #fff;
+    text-align: center;
+    padding: 60px 20px;
+    border-top: 5px solid var(--gold-main);
+  }
+
+  @media(max-width:600px){ 
+    nav { padding: 12px 5px; }
+    nav a { margin: 0 8px; font-size: 11px; letter-spacing: 1px; }
+    .especializados-msg { font-size: 24px; }
+    .sub-msg { font-size: 16px; }
+    .btn { width: 100%; min-width: auto; }
+  }
+</style>
+</head>
+
+<body>
+
+<header>
+  <img src="img.png" alt="VILELA OLIVEIRA ADVOGADOS ASSOCIADOS">
+</header>
+
+<nav>
+  <a href="#sobre">Escritório</a>
+  <a href="#atendimento">Atendimento</a>
+  <a href="#noticias">Notícias</a>
+  <a href="#endereco">Endereço</a>
+</nav>
+
+<section class="section" id="sobre">
+  <h2>Sobre o Escritório</h2>
+  <p>
+    O <strong>VILELA OLIVEIRA ADVOGADOS ASSOCIADOS</strong> atua com excelência e compromisso em todas as áreas jurídicas, 
+    garantindo segurança, ética e soluções eficientes para cada cliente.
+  </p>
+</section>
+
+<section class="section" id="atendimento" style="background: #fafafa; border-top: 1px solid #eee; border-bottom: 1px solid #eee;">
+  <div class="especializados-msg">TEMOS ADVOGADOS ESPECIALISTAS ATUANDO EM DIVERSAS ÁREAS</div>
+  <p class="sub-msg">Entre em contato conosco, conte sua história e retornaremos assim que possível.</p>
+  
+  <a href="https://wa.me/5535991220140" class="btn btn-whatsapp">
+    <svg style="width:20px; height:20px; fill:currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.417-.003 6.557-5.338 11.892-11.893 11.892-1.997-.001-3.951-.5-5.688-1.448l-6.305 1.652zm6.599-3.835c1.52.909 3.394 1.389 5.305 1.391 5.452 0 9.893-4.441 9.896-9.891.002-2.646-1.03-5.132-2.903-7.005-1.874-1.874-4.359-2.907-7.009-2.908-5.453 0-9.894 4.441-9.897 9.891-.001 2.113.569 4.15 1.649 5.882l-1.077 3.931 4.036-1.059z"/></svg>
+    Fale Conosco
+  </a>
+</section>
+
+<section class="section" id="noticias">
+  <h2>Notícias</h2>
+  <p>Acompanhe as atualizações e decisões importantes do Judiciário diretamente no portal oficial do CNJ.</p>
+  <br>
+  <button class="btn" onclick="window.open('https://www.cnj.jus.br/', '_blank')">Acessar Portal CNJ</button>
+</section>
+
+<section class="section" id="endereco">
+  <h2>Endereço</h2>
+  <p>
+    <strong>Unidade São João da Boa Vista</strong><br>
+    Av. Dr. Oscar Pirajá Martins, 741 – Jardim Santo André<br>
+    OAB — 37ª Subseção
+  </p>
+
+  <div class="map-container">
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3695.532371452243!2d-46.7891263!3d-21.9716914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c830f353a25d7b%3A0x280e8f85f524785!2sAv.%20Dr.%20Oscar%20Piraj%C3%A1%20Martins%2C%20741%20-%20Jardim%20Santo%20Andr%C3%A9%2C%20S%C3%A3o%20Jo%C3%A3o%20da%20Boa%20Vista%20-%20SP%2C%2013874-000!5e0!3m2!1spt-BR!2sbr!4v1710795200000!5m2!1spt-BR!2sbr" 
+      width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  </div>
+</section>
+
+<footer>
+  <p style="font-family: 'Playfair Display', serif; font-size: 20px; color: var(--gold-main);">VILELA OLIVEIRA</p>
+  <p style="font-size: 12px; letter-spacing: 1.5px; opacity: 0.8;">ADVOGADOS ASSOCIADOS</p>
+  <p style="font-size: 11px; margin-top: 25px; opacity: 0.5;">© 2026 Todos os direitos reservados.</p>
+</footer>
+
+</body>
+</html>
